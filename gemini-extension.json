@@ -1,0 +1,13 @@
+{
+  "name": "looki-plugin",
+  "version": "1.0.0",
+  "description": "Search and explore your Looki memories through an OAuth-authenticated MCP server.",
+  "mcpServers": {
+    "looki": {
+      "url": "https://open.looki.ai/mcp",
+      "type": "http",
+      "authProviderType": "dynamic_discovery",
+      "timeout": 60000
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "looki-plugin",
+  "version": "1.0.0",
+  "description": "Looki plugin for Claude Code with skills and OAuth-authenticated MCP access to captured moments and recent context.",
+  "author": {
+    "name": "Looki",
+    "url": "https://looki.ai"
+  },
+  "repository": "https://github.com/looki-ai/looki-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./agents/claude/.mcp.json",
+  "keywords": [
+    "looki",
+    "memory",
+    "lifelogging",
+    "mcp"
+  ]
+}
