@@ -1,0 +1,6 @@
+{
+  "looki": {
+    "type": "http",
+    "url": "https://open.looki.ai/mcp"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "looki-plugin",
+  "version": "1.0.0",
+  "description": "Looki tools for GitHub Copilot and VS Code with skills and OAuth-authenticated MCP access.",
+  "author": {
+    "name": "Looki"
+  },
+  "repository": "https://github.com/looki-ai/looki-plugin",
+  "keywords": [
+    "looki",
+    "memory",
+    "lifelogging",
+    "mcp"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "mcpServers": "./agents/copilot/.mcp.json"
+}

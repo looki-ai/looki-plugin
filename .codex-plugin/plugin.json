@@ -1,0 +1,37 @@
+{
+  "name": "looki-plugin",
+  "version": "1.0.0",
+  "description": "Recall captured moments, search past experiences, and inspect recent context through Looki.",
+  "author": {
+    "name": "Looki",
+    "url": "https://looki.ai"
+  },
+  "homepage": "https://looki.ai",
+  "repository": "https://github.com/looki-ai/looki-plugin",
+  "keywords": [
+    "looki",
+    "memory",
+    "lifelogging",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "apps": "./agents/codex/.app.json",
+  "interface": {
+    "displayName": "Looki",
+    "shortDescription": "Recall memories and recent context with Looki",
+    "longDescription": "Connect to Looki through OAuth to browse captured moments, recall past experiences, inspect profile context, and check recent realtime events.",
+    "developerName": "Looki",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://looki.ai",
+    "defaultPrompt": [
+      "Review the moments I captured today.",
+      "Find my Looki memories about a recent experience.",
+      "Check the latest event detected by my Looki device."
+    ],
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg"
+  }
+}

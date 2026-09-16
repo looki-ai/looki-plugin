@@ -1,0 +1,19 @@
+{
+  "name": "looki-plugin",
+  "version": "1.0.0",
+  "description": "Recall captured moments, search past experiences, and inspect recent context through Looki.",
+  "author": {
+    "name": "Looki",
+    "url": "https://looki.ai"
+  },
+  "homepage": "https://looki.ai",
+  "repository": "https://github.com/looki-ai/looki-plugin",
+  "keywords": [
+    "looki",
+    "memory",
+    "lifelogging",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./agents/open-plugin/.mcp.json"
+}

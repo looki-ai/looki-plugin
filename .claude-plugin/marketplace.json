@@ -1,0 +1,17 @@
+{
+  "name": "looki",
+  "owner": {
+    "name": "Looki"
+  },
+  "metadata": {
+    "description": "Looki plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "looki-plugin",
+      "description": "Recall captured moments, search past experiences, and inspect recent context through Looki.",
+      "source": "./"
+    }
+  ]
+}

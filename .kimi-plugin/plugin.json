@@ -1,0 +1,30 @@
+{
+  "name": "looki-plugin",
+  "version": "1.0.0",
+  "description": "Looki plugin for Kimi Code with skills and OAuth-authenticated MCP access to captured moments and recent context.",
+  "author": {
+    "name": "Looki",
+    "url": "https://looki.ai"
+  },
+  "homepage": "https://looki.ai",
+  "repository": "https://github.com/looki-ai/looki-plugin",
+  "keywords": [
+    "looki",
+    "memory",
+    "lifelogging",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": {
+    "looki": {
+      "type": "http",
+      "url": "https://open.looki.ai/mcp"
+    }
+  },
+  "interface": {
+    "displayName": "Looki",
+    "shortDescription": "Looki skills and MCP tools for Kimi Code",
+    "developerName": "Looki",
+    "websiteURL": "https://looki.ai"
+  }
+}
