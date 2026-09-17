@@ -28,6 +28,19 @@ Supported target IDs:
 - `github-copilot`: GitHub Copilot CLI
 - `vscode`: Visual Studio Code
 
+### Agents supported
+
+| Vendor | Supported |
+| --- | --- |
+| Claude Code | ✓ |
+| Cursor | ✓ |
+| Codex | ✓ |
+| GitHub Copilot | ✓ |
+| Gemini | ✓ |
+| VS Code (Open Plugin) | ✓ |
+| Kimi Code | ✓ |
+| Grok Build | ✓ |
+
 ## 2. Official Installation Methods
 
 ### Gemini CLI
@@ -105,8 +118,8 @@ Authenticate Looki separately in every client where the plugin is installed:
 | Codex | Open Looki from `/plugins`, select **Connect**, and complete browser OAuth. |
 | Cursor | Open **Customize > MCP**, select `looki`, and complete browser OAuth. |
 | Gemini CLI | Run `/mcp auth looki`, complete browser OAuth, then use `/mcp` to verify the connection. |
-| GitHub Copilot CLI | Run `/mcp auth looki`, complete browser OAuth, then use `/mcp` to verify the connection. |
-| Grok Build | Open `/plugins`, select Looki, and complete the OAuth flow for its MCP server. |
+| GitHub Copilot CLI | Run `/mcp`, select `looki`, and complete browser OAuth. |
+| Grok Build | Run `/mcps`, select the `looki-plugin` MCP server, and complete browser OAuth. |
 | Kimi Code | Run `/mcp-config login looki`, complete browser OAuth, then use `/mcp` to verify the connection. |
 | Visual Studio Code | Start the Looki MCP server and complete browser OAuth when prompted. Use **MCP: List Servers** to verify its status. |
 
