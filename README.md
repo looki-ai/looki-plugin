@@ -128,6 +128,5 @@ not authenticate another. The plugin does not request or store credentials.
 
 ## 4. Bundled Skills
 
-- `looki-memory`: browse and search captured moments and moment files.
-- `looki-profile`: retrieve the authenticated user's Looki profile.
-- `looki-realtime`: retrieve the latest supported realtime device event.
+- `looki-personal-context`: work with personal context saved as moments and journals.
+- `looki-cli`: install, authenticate, configure, and use the Looki CLI.
