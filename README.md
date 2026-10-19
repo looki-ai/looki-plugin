@@ -125,9 +125,3 @@ Authenticate Looki separately in every client where the plugin is installed:
 
 Each client stores its own OAuth credentials. Authentication in one client does
 not authenticate another. The plugin does not request or store credentials.
-
-## 4. Bundled Skills
-
-- `looki-memory`: browse and search captured moments and moment files.
-- `looki-profile`: retrieve the authenticated user's Looki profile.
-- `looki-realtime`: retrieve the latest supported realtime device event.
