@@ -1,6 +1,6 @@
 {
   "name": "looki-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Looki plugin for Claude Code with skills and OAuth-authenticated MCP access to captured moments and recent context.",
   "author": {
     "name": "Looki",
