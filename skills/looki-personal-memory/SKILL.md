@@ -1,27 +1,31 @@
 ---
 name: looki-personal-memory
-description: Retrieve the user's personal memories saved by Looki, including moments of daily activities, daily and weekly life summaries, chat history and summaries, health reports, and AI-generated journals such as illustrated diaries, comics, and vlogs, through MCP (if available) or the Looki CLI.
+description: Retrieve the user's personal memories saved by Looki, including moments of daily activities, daily and weekly life summaries, chat history and summaries, health reports, AI-generated journals such as illustrated diaries, comics, and vlogs, and a memory overview, through MCP (if available) or the Looki CLI.
 ---
 
 # Looki Personal Memory
 
 Looki is an agent that saves personal context. It organizes captured activity
-into five related record types:
+into six related record types:
 
-1. **Moments** are time-bounded experiences or activities within a day, with
+1. **Memory overview** is a consolidated summary of personal context, with
+   categories such as identity, lifestyle, traits, relationships, recent
+   experiences, and Looki response preferences. It can include specific events,
+   but is not a complete event timeline.
+2. **Moments** are time-bounded experiences or activities within a day, with
    optional audio summaries. Use them to recall specific events by time or
    keyword. Moment files, including raw media recordings, can also be
    retrieved, primarily for local saving. Use with caution due to their large
    file size.
-2. **Summaries** are daily or weekly life summaries covering timelines, places,
+3. **Summaries** are daily or weekly life summaries covering timelines, places,
    key events, and recurring patterns across the period.
-3. **Health reports** contain health-related observations and estimates, such
+4. **Health reports** contain health-related observations and estimates, such
    as diet, steps, heart rate, and sleep. Use them to review daily patterns and
    relationships among activity, diet, and rest.
-4. **Journals** are saved creative artifacts such as illustrated diaries, daily
+5. **Journals** are saved creative artifacts such as illustrated diaries, daily
    comic storyboards, and vlogs. Use them for retrieval of those artifacts, not
    as general-purpose summaries.
-5. **Chat**:
+6. **Chat**:
    - Chat history contains individual conversation messages. Use it when exact
      wording, message order, or details omitted from a chat summary matter.
    - A chat summary captures key topics and exchanges from user-assistant
@@ -31,6 +35,8 @@ into five related record types:
 
 Choose records according to the question:
 
+- Use the memory overview for personal context, preferences, and a broad recap of
+  recent experiences.
 - For a known date, browse records for that date.
 - For an experience without an exact date, search moments with meaningful terms
   and any known date bounds.
@@ -146,6 +152,7 @@ Common operations include:
 
 | Need | Command |
 | --- | --- |
+| Read a memory overview | `looki memory overview --json` |
 | Browse moments | `looki moment list --json` |
 | Browse moments on one date | `looki moment list --date 2026-10-01 --json` |
 | Browse moments in a range | `looki moment list --from-date 2026-10-01 --to-date 2026-10-07 --json` |
