@@ -4,10 +4,14 @@
   "description": "Recall captured moments, search past experiences, and inspect recent context through Looki.",
   "type": "module",
   "main": "agents/deepseek/index.js",
+  "exports": {
+    ".": "./agents/deepseek/index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./agents/deepseek/locale/*.json"
+  },
   "files": [
     "agents/deepseek/",
     "assets/",
-    "cordis.patch.yml",
     "skills/"
   ],
   "author": {
@@ -33,7 +37,7 @@
   },
   "dsh": {
     "bundle": {
-      "patch": "./cordis.patch.yml"
+      "patch": "./agents/deepseek/cordis.patch.yml"
     }
   },
   "dependencies": {
