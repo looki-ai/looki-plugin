@@ -134,7 +134,5 @@ Authenticate Looki separately in every client where the plugin is installed:
 | Kimi Code | Run `/mcp-config login looki`, complete browser OAuth, then use `/mcp` to verify the connection. |
 | Visual Studio Code | Start the Looki MCP server and complete browser OAuth when prompted. Use **MCP: List Servers** to verify its status. |
 
-Each native client stores its own OAuth credentials. Authentication in one
-client does not authenticate another. Harness uses a separate `mcp-remote`
-credential store. The plugin does not store credentials in its
-configuration or source files.
+Each client stores its own OAuth credentials. Authentication in one client does
+not authenticate another. The plugin does not request or store credentials.
