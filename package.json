@@ -1,0 +1,42 @@
+{
+  "name": "looki-plugin",
+  "version": "1.0.1",
+  "description": "Recall captured moments, search past experiences, and inspect recent context through Looki.",
+  "type": "module",
+  "main": "agents/deepseek/index.js",
+  "files": [
+    "agents/deepseek/",
+    "assets/",
+    "cordis.patch.yml",
+    "skills/"
+  ],
+  "author": {
+    "name": "Looki",
+    "url": "https://looki.ai"
+  },
+  "homepage": "https://looki.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/looki-ai/looki-plugin.git"
+  },
+  "keywords": [
+    "looki",
+    "memory",
+    "lifelogging",
+    "mcp",
+    "dsh-plugin"
+  ],
+  "icon": "./assets/logo.svg",
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "mcp-remote": "0.16.1"
+  }
+}

@@ -35,6 +35,7 @@ Supported target IDs:
 | Claude Code | ✓ |
 | Cursor | ✓ |
 | Codex | ✓ |
+| DeepSeek Harness | ✓ |
 | GitHub Copilot | ✓ |
 | Gemini | ✓ |
 | VS Code (Open Plugin) | ✓ |
@@ -66,6 +67,15 @@ Run `/reload-plugins` inside Claude Code after installation.
 
 Open Codex and enter `/plugins`, then find Looki in the configured marketplace
 and select **Install plugin**. Start a new Codex session after installation.
+
+### DeepSeek Harness
+
+```bash
+dsh plugin --profile desktop add github:looki-ai/looki-plugin
+```
+
+Use `web` instead of `desktop` for the Web profile. Restart DeepSeek Harness
+after installation.
 
 ### Cursor
 
@@ -116,6 +126,7 @@ Authenticate Looki separately in every client where the plugin is installed:
 | --- | --- |
 | Claude Code | Run `/mcp`, select `looki`, choose **Authenticate**, and complete browser OAuth. |
 | Codex | Open Looki from `/plugins`, select **Connect**, and complete browser OAuth. |
+| DeepSeek Harness | Complete the browser OAuth flow opened by `mcp-remote` on the first connection. |
 | Cursor | Open **Customize > MCP**, select `looki`, and complete browser OAuth. |
 | Gemini CLI | Run `/mcp auth looki`, complete browser OAuth, then use `/mcp` to verify the connection. |
 | GitHub Copilot CLI | Run `/mcp`, select `looki`, and complete browser OAuth. |
@@ -123,5 +134,7 @@ Authenticate Looki separately in every client where the plugin is installed:
 | Kimi Code | Run `/mcp-config login looki`, complete browser OAuth, then use `/mcp` to verify the connection. |
 | Visual Studio Code | Start the Looki MCP server and complete browser OAuth when prompted. Use **MCP: List Servers** to verify its status. |
 
-Each client stores its own OAuth credentials. Authentication in one client does
-not authenticate another. The plugin does not request or store credentials.
+Each native client stores its own OAuth credentials. Authentication in one
+client does not authenticate another. Harness uses a separate `mcp-remote`
+credential store. The plugin does not store credentials in its
+configuration or source files.
