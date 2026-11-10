@@ -27,7 +27,7 @@ jobs:
           tar -czvf "looki-plugin.tar.gz" --dereference \
             .claude-plugin/ .cursor-plugin/ .codex-plugin/ .kimi-plugin/ \
             .grok-plugin/ .github/plugin/ .plugin/ agents/ \
-            gemini-extension.json README.md \
+            gemini-extension.json package.json README.md \
             skills/ assets/ || exit 1
 
       - name: Upload release asset

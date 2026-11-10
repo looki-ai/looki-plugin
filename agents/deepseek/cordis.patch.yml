@@ -1,0 +1,24 @@
+- insert:
+    - id: looki-plugin
+      name: looki-plugin
+    - id: looki-skills
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      inject: [lookiPlugin]
+      config:
+        providerName: looki
+        includeDefaultRoots: false
+        bundledSkillDir: !!js ctx.lookiPlugin.skillsDir
+        watch: false
+    - id: looki-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      inject: [lookiPlugin]
+      config:
+        serverName: looki
+        transport: stdio
+        command: !!js ctx.lookiPlugin.node
+        args: !!js >-
+          [ctx.lookiPlugin.proxy, 'https://open.looki.ai/mcp', '--transport', 'http-only',
+          '--auth-timeout', '300', '--static-oauth-client-info',
+          '{"client_id":"30a537be-b716-4a93-8b45-03479f018ff9"}']
+        env:
+          ELECTRON_RUN_AS_NODE: '1'
