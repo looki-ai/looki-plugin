@@ -18,7 +18,7 @@
         command: !!js ctx.lookiPlugin.node
         args: !!js >-
           [ctx.lookiPlugin.proxy, 'https://open.looki.ai/mcp', '--transport', 'http-only',
-          '--auth-timeout', '300', '--static-oauth-client-info',
-          '{"client_id":"30a537be-b716-4a93-8b45-03479f018ff9"}']
+          '--auth-timeout', '300', '--static-oauth-client-metadata',
+          '{"client_name":"DeepSeek Harness","client_uri":"https://github.com/deepseek-ai/deepseek-harness","scope":"read"}']
         env:
           ELECTRON_RUN_AS_NODE: '1'
