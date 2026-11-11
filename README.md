@@ -66,7 +66,16 @@ Run `/reload-plugins` inside Claude Code after installation.
 ### Codex
 
 Open Codex and enter `/plugins`, then find Looki in the configured marketplace
-and select **Install plugin**. Start a new Codex session after installation.
+and select **Install plugin**.
+
+Alternatively, install directly from the terminal:
+
+```bash
+codex plugin marketplace add https://github.com/looki-ai/looki-plugin.git
+codex plugin add looki-plugin@looki
+```
+
+Start a new Codex session after installation.
 
 ### DeepSeek Harness
 
