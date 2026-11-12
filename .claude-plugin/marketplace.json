@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Looki plugins for Claude Code",
-    "version": "1.0.3"
+    "version": "1.0.4"
   },
   "plugins": [
     {

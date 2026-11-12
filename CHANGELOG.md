@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.4](https://github.com/looki-ai/looki-plugin/compare/v1.0.3...v1.0.4) (2026-11-12)
+
+
+### Features
+
+* **dsh:** add localized DeepSeek Harness plugin support ([#10](https://github.com/looki-ai/looki-plugin/issues/10)) ([462542e](https://github.com/looki-ai/looki-plugin/commit/462542e957539a99050c363a40a7d177a8039a85))
+* **dsh:** redirect OAuth completion to Looki success page ([#14](https://github.com/looki-ai/looki-plugin/issues/14)) ([92c32c6](https://github.com/looki-ai/looki-plugin/commit/92c32c687016b20678a2d646f72a981b3080317d))
+
+
+### Bug Fixes
+
+* **dsh:** restore dynamic OAuth client registration ([#13](https://github.com/looki-ai/looki-plugin/issues/13)) ([b679ddd](https://github.com/looki-ai/looki-plugin/commit/b679ddd8fada71f17e686f43d7bbd675d2abbb40))
+
 ## [1.0.3](https://github.com/looki-ai/looki-plugin/compare/v1.0.2...v1.0.3) (2026-11-04)
 
 
