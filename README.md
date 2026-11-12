@@ -86,6 +86,9 @@ dsh plugin --profile desktop add github:looki-ai/looki-plugin
 Use `web` instead of `desktop` for the Web profile. Restart DeepSeek Harness
 after installation.
 
+If Looki does not connect, ask Harness to check or retry the Looki connection.
+Complete browser authorization if prompted.
+
 ### Cursor
 
 ```bash
