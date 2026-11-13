@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/looki-ai/looki-plugin/compare/v1.0.4...v1.0.5) (2026-11-13)
+
+
+### Bug Fixes
+
+* **dsh:** avoid blocking Harness startup on MCP authorization ([#15](https://github.com/looki-ai/looki-plugin/issues/15)) ([0707932](https://github.com/looki-ai/looki-plugin/commit/07079320f3f714b14e763b092cfd57526d8fbdbf))
+
 ## [1.0.4](https://github.com/looki-ai/looki-plugin/compare/v1.0.3...v1.0.4) (2026-11-12)
 
 
