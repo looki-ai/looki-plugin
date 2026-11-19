@@ -145,3 +145,9 @@ Authenticate Looki separately in every client where the plugin is installed:
 
 Each client stores its own OAuth credentials. Authentication in one client does
 not authenticate another. The plugin does not request or store credentials.
+
+## License
+
+The plugin code and documentation in this repository are licensed under the
+[MIT License](LICENSE). This license does not cover the hosted Looki service
+or grant access to any Looki account or user data.
