@@ -10,5 +10,10 @@
   "license": "MIT",
   "homepage": "https://looki.ai",
   "repository": "https://github.com/looki-ai/looki-plugin",
-  "keywords": ["looki", "memory", "lifelogging", "mcp"]
+  "keywords": [
+    "looki",
+    "memory",
+    "lifelogging",
+    "mcp"
+  ]
 }
