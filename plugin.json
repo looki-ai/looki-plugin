@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "looki-plugin",
+  "version": "1.0.6",
+  "description": "Search and summarize personal memories saved by Looki using a Copilot skill and an OAuth-authenticated MCP server.",
+  "author": {
+    "name": "Looki",
+    "url": "https://looki.ai"
+  },
+  "license": "MIT",
+  "homepage": "https://looki.ai",
+  "repository": "https://github.com/looki-ai/looki-plugin",
+  "keywords": ["looki", "memory", "lifelogging", "mcp"]
+}
