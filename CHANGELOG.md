@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/looki-ai/looki-plugin/compare/v1.0.5...v1.0.6) (2026-11-20)
+
+
+### Features
+
+* support the Awesome Copilot plugin marketplace ([#17](https://github.com/looki-ai/looki-plugin/issues/17)) ([1968bb5](https://github.com/looki-ai/looki-plugin/commit/1968bb5ae4f586034299c8ff8189542c3bfcc50c))
+
 ## [1.0.5](https://github.com/looki-ai/looki-plugin/compare/v1.0.4...v1.0.5) (2026-11-13)
 
 
